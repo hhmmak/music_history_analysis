@@ -66,8 +66,10 @@ function App() {
               <h2>Months Service Is Being Used This Year</h2>
               <table>
                 <thead>
-                  <th>Month</th>
-                  <th>Used?</th>
+                  <tr>
+                    <th>Month</th>
+                    <th>Used?</th>
+                  </tr>
                 </thead>
                 <tbody>
                   {
