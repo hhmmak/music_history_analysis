@@ -12,11 +12,11 @@ function App() {
   const analyze = e => {
 
     let playedMap = new Map(); //for 10 top most played songs
-    let playedMonth = new Array(12);  //for most played songs by month each year
+    let playedMonth = new Array(12);  //for monthly usage
     playedMonth.fill(false);
 
     for (let song of history){
-      let title = song.title.replace(/^Watched /g, "");
+      let title = song.title.replace(/^Watched /g, ""); //remove Watched from beginning of song title
       playedMap.set(title, (playedMap.get(title) || 0) + 1);
 
 
